@@ -165,7 +165,7 @@ export class JobDbRepository {
 			JOB_RETURN_QUERY
 		);
 
-		return result.value || undefined;
+		return result?.value || undefined;
 	}
 
 	async connect(): Promise<void> {
